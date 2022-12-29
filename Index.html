@@ -64,9 +64,36 @@
         <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="button-modal-close" data-modal-close>
-                    <img src="./image/Close.svg" alt="хрестик для зачинення">
-                </button>
+                <form>
+                    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                <div>
+                    <div class="modal-form-field">
+                    <label class="modal-text" for="name">Iм'я</label>
+                    <input class="modal-input-field" type="text" name="name" id="name"/>
+                    </div>
+                    
+                    <div class="modal-form-field">
+                        <label class="modal-text" for="tel">Телефон</label>
+                        <input class="modal-input-field" type="tel" name="tel" id="tel">
+                    </div>
+  
+                    <div class="modal-form-field">
+                        <label class="modal-text" for="email">Пошта</label>
+                        <input class="modal-input-field" type="email" name="email" id="email">
+                    </div>
+
+                    <div class="modal-form-comment">
+                        <label class="modal-text" for="comment">Коментар</label>
+                        <textarea name="comment" id="comment" rows="7" placeholder="Введіть текст"></textarea>
+                    </div>
+                    <div class="modal-form-policy">
+                        <input type="checkbox" name="" id="">
+                        <label for="">Погоджуюся з розсилкою та приймаю</label><a href="#"> Умови договору</a>
+                    </div>
+                        <button class="button-modal-main" type="submit">Відправити</button>
+                </div>
+                <button class="button-modal-close" data-modal-close></button>
+                </form>
             </div>
         </div>
     </div>

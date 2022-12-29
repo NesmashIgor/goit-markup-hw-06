@@ -15,8 +15,11 @@
 body {
     color: var(--color-text-primary);
     font-family: "Roboto", sans-serif;
-
     width: auto;
+}
+
+textarea {
+    resize: none;
 }
 
 ul, h1, h2, h3, p {
@@ -248,8 +251,65 @@ a {
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
-
     border-radius: 4px;
+}
+
+.modal-title {
+    font-size: 20px;
+    line-height: 1.172;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 40px 40px 12px 40px;
+    text-align: center;
+}
+
+.modal-text {
+    font-size: 12px;
+    line-height: 1.171;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--color-text-secondary);
+    padding-bottom: 4px;
+}
+
+.modal-form-field {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 10px 40px;
+}
+
+.modal-input-field {
+    height: 40px;
+}
+
+.modal-form-comment {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 20px 40px;
+}
+
+.modal-form-policy {
+    display: inline-block;
+    padding: 0 40px 20px 40px;
+}
+
+.policy-text {
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    color: var(--color-text-secondary)
+    letter-spacing: 0.03em;
+}
+
+.button-modal-main {
+    margin: auto;
+    display: block;
+    background-color: var(--color-action);
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0;
+    color: var(--color-icon-main);
 }
 
 .button-modal-close {
