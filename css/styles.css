@@ -348,7 +348,7 @@ a {
 
 .checkbox:checked + .checkbox-icon {
     background-color: #2196F3;
-    background-image: url(/image/check.svg);
+    background-image: url(../image/check.svg);
     background-size: contain;
     border: 0;
 }
