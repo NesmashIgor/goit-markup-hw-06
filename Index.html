@@ -68,31 +68,50 @@
                     <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                 <div>
                     <div class="modal-form-field">
-                    <label class="modal-text" for="name">Iм'я</label>
-                    <input class="modal-input-field" type="text" name="name" id="name"/>
+                        <label class="modal-text" for="name">Iм'я</label>
+                        <div class="imput-field-container">
+                        <input class="modal-input-field" type="text" name="name" id="name"/>
+                            <svg class="modal-field-icon" width="18px" height="18px">
+                                <use href="./image/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
                     </div>
-                    
                     <div class="modal-form-field">
                         <label class="modal-text" for="tel">Телефон</label>
-                        <input class="modal-input-field" type="tel" name="tel" id="tel">
+                        <div class="imput-field-container">
+                            <input class="modal-input-field" type="tel" name="tel" id="tel">
+                            <svg class="modal-field-icon" width="18px" height="18px">
+                                <use href="./image/icons.svg#phone"></use>
+                            </svg>
+                        </div>
                     </div>
-  
                     <div class="modal-form-field">
                         <label class="modal-text" for="email">Пошта</label>
-                        <input class="modal-input-field" type="email" name="email" id="email">
+                        <div class="imput-field-container">
+                            <input class="modal-input-field" type="email" name="email" id="email">
+                            <svg class="modal-field-icon" width="18px" height="18px">
+                                <use href="./image/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
                     </div>
-
                     <div class="modal-form-comment">
                         <label class="modal-text" for="comment">Коментар</label>
-                        <textarea name="comment" id="comment" rows="7" placeholder="Введіть текст"></textarea>
+                        <textarea class="modal-comment-box" name="comment" id="comment" rows="7" placeholder="Введіть текст"></textarea>
                     </div>
                     <div class="modal-form-policy">
-                        <input type="checkbox" name="" id="">
-                        <label for="">Погоджуюся з розсилкою та приймаю</label><a href="#"> Умови договору</a>
+                        <label class="policy-text" for="topic">
+                        <input class="checkbox" type="checkbox" name="topic" id="topic">
+                            <span class="checkbox-icon"></span>
+                        Погоджуюся з розсилкою та приймаю</label>
+                        <a class="policy-link" href="#"> Умови договору</a>
                     </div>
                         <button class="button-modal-main" type="submit">Відправити</button>
                 </div>
-                <button class="button-modal-close" data-modal-close></button>
+                <button class="button-modal-close" data-modal-close>
+                    <svg class="buttom-close-icon" width="11px" height="11px">
+                        <use href="./image/icons.svg#icon-Close"></use>
+                    </svg>
+                </button>
                 </form>
             </div>
         </div>
@@ -103,7 +122,7 @@
                         <ul class="list list-main-container">
                             <li>
                                 <div class="icon-main">
-                                    <svg width="70px" hight="70px">
+                                    <svg width="70px" height="70px">
                                         <use href="./image/icons.svg#icon-antenna-1"></use>
                                     </svg>
                                 </div> 
@@ -112,7 +131,7 @@
                             </li>
                                 <li>
                                     <div class="icon-main">
-                                        <svg width="70px" hight="70px">
+                                        <svg width="70px" height="70px">
                                             <use href="./image/icons.svg#icon-clock-1"></use>
                                         </svg>
                                     </div>  
@@ -121,7 +140,7 @@
                                 </li>
                                 <li>
                                     <div class="icon-main">
-                                        <svg  width="70px" hight="70px">
+                                        <svg  width="70px" height="70px">
                                             <use href="./image/icons.svg#icon-diagram-1"></use>
                                         </svg>
                                     </div>
@@ -130,7 +149,7 @@
                                 </li>
                                 <li>
                                     <div class="icon-main">
-                                        <svg width="70px" hight="70px">
+                                        <svg width="70px" height="70px">
                                             <use href="./image/icons.svg#icon-astronaut-1"></use>
                                         </svg>
                                     </div> 
@@ -389,7 +408,7 @@
             </div>
         <div class="social-container">
             <div>
-                <h3 class="social-title">приєднуйтесь</h3>
+                <h3 class="footer-title">приєднуйтесь</h3>
             </div>
             <div>
                 <ul class="list social-list">
@@ -423,6 +442,16 @@
                 </li>
             </ul>
         </div>          
+        </div>
+        <div>
+            <h3 class="footer-title">Підпишіться на розсилку</h3>
+            <input class="footer-form" type="email" name="email" id="E-mail" placeholder="E-mail">
+                <button class="button-footer" type="submit">
+                        <span class="text-buttom-footer">Підписатися</span>
+                        <svg class="button-footer-icon" width="24px" height="24px">
+                            <use href="./image/icons.svg#icon-icon-send"></use>
+                        </svg>
+                </button>
         </div>
     </div>
     </footer>
